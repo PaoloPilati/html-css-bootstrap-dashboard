@@ -1,4 +1,18 @@
 a.navbar-brand > img {
-    width: 3.5rem;
+    width: 4rem;
     height: auto;
+}
+
+table tr > *:nth-child(2) {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    table tr > *:nth-child(2) {
+        display: table-cell;
+    }
+}
+
+caption {
+    display: none;
 }

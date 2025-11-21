@@ -8,11 +8,11 @@
         <link rel="stylesheet" href="CSS/style.css" type="text/css">
     </head>
     <body>
-        <header>
+        <header class="mb-4">
             <nav class="navbar navbar-expand-lg bg-dark border-bottom border-body" data-bs-theme="dark">
             <div class="container-fluid">
                 <a class="navbar-brand p-1" href="#">
-                    <img class="navbar-brand" src="img/duck.png">
+                    <img class="navbar-brand" src="img/duck.png" alt="logo con papera">
                 </a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -20,26 +20,183 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Catalogo libri</a>
+                            <a class="nav-link active" aria-current="page" href="#">
+                                Catalogo libri
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Anagrafica utenti</a>
+                            <a class="nav-link" href="#">
+                                Anagrafica utenti
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Storico prestiti</a>
+                            <a class="nav-link" href="#">
+                                Storico prestiti
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Help</a>
+                            <a class="nav-link" href="#">
+                                Help
+                            </a>
                         </li>
                     </ul>
                     <form class="d-flex" role="search">
-                        <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search"/>
-                        <button class="btn btn-outline-success" type="submit">Cerca</button>
+                        <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search">
+                        <button class="btn btn-outline-light" type="submit">
+                            Cerca
+                        </button>
                     </form>
                 </div>
             </div>
             </nav>
         </header>
+        <main>
+            <div class="container">
+                <div class="row mb-5">
+                    <h1 class="col-10">
+                        Catalogo libri
+                    </h1>
+                    <button class="col-2 btn">
+                        Aggiungi libro
+                    </button>
+                </div>
+            
+                <div class="row">
+                    <div class="col-12 col-lg-9">
+                        <table class="table table-striped mb-4">
+                            <caption>
+                                Lista dei libri in prestito
+                            </caption>
+                            <thead class="thead-light">
+                                <tr>
+                                    <th scope="col">
+                                        Titolo
+                                    </th>
+                                    <th scope="col">
+                                        Data prestito
+                                    </th>
+                                    <th scope="col">
+                                        Stato
+                                    </th>
+                                    <th scope="col">
+                                        Azioni
+                                    </th>
+                                </tr>
+                            </thead>
+                            <tbody class="table-group-divider">
+                                <tr>
+                                    <td>I pilastri della Terra</td>
+                                    <td>-</td>
+                                    <td>Disponibile</td>
+                                    <td>icone</td>
+                                </tr>
+                                <tr>
+                                    <td>I promessi sposi</td>
+                                    <td>-</td>
+                                    <td>Disponibile</td>
+                                    <td>icone</td>
+                                </tr>
+                                <tr>
+                                    <td>Il signore degli anelli</td>
+                                    <td>18/10/2023</td>
+                                    <td>In prestito</td>
+                                    <td>icone</td>
+                                </tr>
+                                <tr>
+                                    <td>Harry Potter e la pietra filosofale</td>
+                                    <td>-</td>
+                                    <td>Disponibile</td>
+                                    <td>icone</td>
+                                </tr>
+                                <tr>
+                                    <td>Il codice Da Vinci</td>
+                                    <td>-</td>
+                                    <td>Non disponibile</td>
+                                    <td>icone</td>
+                                </tr>
+                                <tr>
+                                    <td>Shining</td>
+                                    <td>-</td>
+                                    <td>Disponibile</td>
+                                    <td>icone</td>
+                                </tr>
+                                <tr>
+                                    <td>La divina commedia</td>
+                                    <td>21/09/2023</td>
+                                    <td>In prestito</td>
+                                    <td>icone</td>
+                                </tr>
+                                <tr>
+                                    <td>Il trono di spade</td>
+                                    <td>-</td>
+                                    <td>Disponibile</td>
+                                    <td>icone</td>
+                                </tr>
+                                <tr>
+                                    <td>Il mondo di Sofia</td>
+                                    <td>-</td>
+                                    <td>Non disponibile</td>
+                                    <td>icone</td>
+                                </tr>
+                                <tr>
+                                    <td>Le cronache di Narnia: il leone, la strega e l'armadio</td>
+                                    <td>25/07/2023</td>
+                                    <td>In prestito</td>
+                                    <td>icone</td>
+                                </tr>
+                                <tr>
+                                    <td>Il piccolo principe</td>
+                                    <td>-</td>
+                                    <td>Disponibile</td>
+                                    <td>icone</td>
+                                </tr>
+                                <tr>
+                                    <td>La storia infinita</td>
+                                    <td>-</td>
+                                    <td>Disponibile</td>
+                                    <td>icone</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                            <div class="col-12 col-lg-3 py-lg-4">
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        Todo
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item">
+                                            Chiamare segreteria
+                                        </li>
+                                        <li class="list-group-item">
+                                            Mandare avvisi prestiti scaduti
+                                        </li>
+                                        <li class="list-group-item">
+                                            Ordinare nuovi libri
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="card mb-4">
+                                    <div class="card-header">
+                                        F.A.Q.
+                                    </div>
+                                    <ul class="list-group list-group-flush">
+                                    <li class="list-group-item">
+                                        Come aggiungere un nuovo libro?
+                                    </li>
+                                    <li class="list-group-item">
+                                        Come posso accedere all'anagrafica utenti?
+                                    </li>
+                                    <li class="list-group-item">
+                                        Posso usare questa dashboard da mobile?
+                                    </li>
+                                </ul>
+                            </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </main>
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
     </body>
 </html>
