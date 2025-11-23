@@ -21,18 +21,14 @@ a {
     text-decoration: none;
 }
 
-img {
-    object-fit: contain;
-}
-
 .icon-span {
     border: 2px solid #545454;
     border-radius: 20%;
-    object-fit: scale-down;
-    padding: 0.1rem;
+    padding:0.2rem;
+    margin-right: 1rem;
 }
 
 span.icon-span > img {
-    object-fit: cover;
     opacity: 0.65;
+    width: 1rem;
 }
