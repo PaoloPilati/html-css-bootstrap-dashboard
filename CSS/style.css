@@ -38,3 +38,7 @@ span.icon-span > img {
     opacity: 0.65;
     width: 1rem;
 }
+
+label {
+    font-weight: 450;
+}
