@@ -53,18 +53,18 @@
                     <div class="row">
                         <div class="col-6 mb-3">
                             <label for="nome-autore" class="form-label">Nome autore</label>
-                            <input type="text" class="form-control" id="nome-autore" placeholder="Inserisci il nome dell'autore">
+                            <input type="text" name="nomeAutore" class="form-control" id="nome-autore" placeholder="Inserisci il nome dell'autore">
                         </div>
                         <div class="col-6 mb-3">
                             <label for="cognome-autore" class="form-label">Cognome autore</label>
-                            <input type="text" class="form-control" id="cognome-autore" placeholder="Inserisci il cognome dell'autore">
+                            <input type="text" name="cognomeAutore" class="form-control" id="cognome-autore" placeholder="Inserisci il cognome dell'autore">
                         </div>
                     </div>
                     
                     <div class="row">
                         <div class="col-12 mb-3">
                             <label for="titolo-libro" class="form-label">Titolo</label>
-                            <input type="text" class="form-control" id="titolo-libro" aria-label="Titolo del libro" placeholder="Inserisci il titolo del libro">
+                            <input type="text" name="titoloLibro" class="form-control" id="titolo-libro" aria-label="Titolo del libro" placeholder="Inserisci il titolo del libro">
                             <div id="emailHelp" class="form-text">Titolo versione italiana</div>
                         </div>
                     </div>
@@ -76,7 +76,7 @@
                     <div class="row mb-3">
                         <div class="col-12 col-md-4 mb-md-3">
                             <label for="genere-libro" class="form-label">Genere</label>
-                            <select class="form-select" id="genere-Libro" aria-label="Genere del libro">
+                            <select class="form-select" name="genereLibro" id="genere-Libro" aria-label="Genere del libro">
                                 <option selected>Scegli il genere</option>
                                 <option value="1">Giallo</option>
                                 <option value="2">Infanzia</option>
@@ -85,11 +85,11 @@
                         </div>
                         <div class="col-12 col-md-4 mb-md-3">
                             <label for="anno-pubblicazione" class="form-label">Anno di pubblicazione</label>
-                            <input type="text" class="form-control" id="anno-pubblicazione" placeholder="Inserisci l'anno">
+                            <input type="text" name="annoPubblicazione" class="form-control" id="anno-pubblicazione" placeholder="Inserisci l'anno">
                         </div>
                         <div class="col-12 col-md-4 mb-md-3">
-                            <label for="numero-ISBN" class="form-label">ISBN#</label>
-                            <input type="text" class="form-control" id="numero-ISBN" placeholder="Inserisci il codice ISBN#" required>
+                            <label for="numero-isbn" class="form-label">ISBN#</label>
+                            <input type="text" name="numeroIsbn" class="form-control" id="numero-isbn" placeholder="Inserisci il codice ISBN#" required>
                         </div>
                     </div>
                     <div class="border mb-3"></div>
@@ -105,8 +105,8 @@
                                 <textarea class="form-control" id="note" rows="5" placeholder="Inserisci eventuali note sul libro"></textarea>
                             </div>
                             <div class="form-check mb-3">
-                                <input type="checkbox" class="form-check-input" id="check-note">
-                                <label class="form-check-label" for="check-note">Disponibile anche in digitale</label>
+                                <input type="checkbox" name="checkDigitalVersion" class="form-check-input" id="check-digital-version">
+                                <label class="form-check-label" for="check-digital-version">Disponibile anche in digitale</label>
                             </div>
                         </div>
                     <div class="d-flex justify-content-between">
