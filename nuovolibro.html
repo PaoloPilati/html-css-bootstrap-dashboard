@@ -52,19 +52,19 @@
                 <form>
                     <div class="row">
                         <div class="col-6 mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Nome autore</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Inserisci il nome dell'autore">
+                            <label for="nomeAutore" class="form-label">Nome autore</label>
+                            <input type="text" class="form-control" id="nomeAutore" placeholder="Inserisci il nome dell'autore">
                         </div>
                         <div class="col-6 mb-3">
-                            <label for="exampleInputPassword1" class="form-label">Cognome autore</label>
-                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Inserisci il cognome dell'autore">
+                            <label for="cognomeAutore" class="form-label">Cognome autore</label>
+                            <input type="text" class="form-control" id="cognomeAutore" placeholder="Inserisci il cognome dell'autore">
                         </div>
                     </div>
                     
                     <div class="row">
-                        <div class="col-12 mb-3">   
-                            <label for="exampleInputEmail1" class="form-label">Titolo</label>
-                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Inserisci il titolo del libro">
+                        <div class="col-12 mb-3">
+                            <label for="titoloLibro" class="form-label">Titolo</label>
+                            <input type="text" class="form-control" id="titoloLibro" aria-label="Titolo del libro" placeholder="Inserisci il titolo del libro">
                             <div id="emailHelp" class="form-text">Titolo versione italiana</div>
                         </div>
                     </div>
@@ -75,8 +75,8 @@
                     </div>
                     <div class="row mb-3">
                         <div class="col-12 col-md-4 mb-md-3">
-                            <label for="disabledSelect" class="form-label">Genere</label>
-                            <select class="form-select" aria-label="Default select example">
+                            <label for="genereLibro" class="form-label">Genere</label>
+                            <select class="form-select" aria-label="Genere del libro" id="genereLibro">
                                 <option selected>Scegli il genere</option>
                                 <option value="1">Giallo</option>
                                 <option value="2">Infanzia</option>
@@ -84,12 +84,12 @@
                             </select>
                         </div>
                         <div class="col-12 col-md-4 mb-md-3">
-                            <label for="exampleInputPassword1" class="form-label">Anno di pubblicazione</label>
-                            <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Inserisci l'anno">
+                            <label for="annoPubblicazione" class="form-label">Anno di pubblicazione</label>
+                            <input type="number" class="form-control" id="annoPubblicazione" placeholder="Inserisci l'anno">
                         </div>
                         <div class="col-12 col-md-4 mb-md-3">
-                            <label for="exampleInputPassword1" class="form-label">ISBN#</label>
-                            <input type="number" class="form-control" id="exampleInputPassword1" placeholder="Inserisci il codice ISBN#">
+                            <label for="numeroISBN" class="form-label">ISBN#</label>
+                            <input type="number" class="form-control" id="numeroISBN" placeholder="Inserisci il codice ISBN#">
                         </div>
                     </div>
                     <div class="border mb-3"></div>
@@ -101,12 +101,12 @@
                     <div class="row">
                         <div class="col-12 col-md-8">
                             <div class="mb-3">
-                                <label for="exampleFormControlTextarea1" class="form-label">Note</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Inserisci eventuali note sul libro"></textarea>
+                                <label for="note" class="form-label">Note</label>
+                                <textarea class="form-control" id="note" rows="5" placeholder="Inserisci eventuali note sul libro"></textarea>
                             </div>
                             <div class="form-check mb-3">
-                                <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                                <label class="form-check-label" for="exampleCheck1">Disponibile anche in digitale</label>
+                                <input type="checkbox" class="form-check-input" id="checkNote">
+                                <label class="form-check-label" for="checkNote">Disponibile anche in digitale</label>
                                 </div>
                             <button class="btn btn-primary btn-sm" role="button">
                                 <a href="#">Aggiungi libro</a>
